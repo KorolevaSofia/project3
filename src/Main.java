@@ -1,16 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        int a = 150; //Сумма на счете
-        int b = 1350;//Сумма пополнения
-        int c; //Количество бонусных рублей
-        int d;//Итоговый счет
-        if (b > 1000) { c = b/100; } else {
-            c = 0;}
-        d = a + b + c;
+        int check = 150; //Сумма на счете
+        int sum = 1350;//Сумма пополнения
+        int bonus; //Количество бонусных рублей
+        int result;//Итоговый счет
+        if (sum > 1000) {
+            bonus = sum / 100;
+        } else {
+            bonus = 0;
+        }
+        result = check + sum + bonus;
         System.out.print("Количество бонусных рублей = ");
-        System.out.println(c);
+        System.out.println(bonus);
         System.out.print("Итоговый счет = ");
-        System.out.print(d);
+        System.out.print(result);
 
     }
 }
